@@ -1,0 +1,31 @@
+{
+  "name": "claude-code-sdk-typescript-example",
+  "version": "1.0.0",
+  "description": "Example project using Claude Code TypeScript SDK",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "examples": "tsx src/run-examples.ts",
+    "examples:basic": "tsx src/run-examples.ts basic",
+    "examples:advanced": "tsx src/run-examples.ts advanced",
+    "examples:streaming": "tsx src/run-examples.ts streaming",
+    "examples:completion": "tsx src/run-examples.ts completion",
+    "examples:tests": "tsx src/run-examples.ts tests",
+    "examples:translate": "tsx src/run-examples.ts translate",
+    "examples:optimize": "tsx src/run-examples.ts optimize",
+    "examples:security": "tsx src/run-examples.ts security",
+    "examples:all": "tsx src/run-examples.ts all"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.60.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0"
+  }
+}
